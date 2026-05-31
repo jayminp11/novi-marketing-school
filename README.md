@@ -1,1 +1,0 @@
-# novi-marketing-school
