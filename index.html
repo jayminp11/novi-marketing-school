@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>JP School of Entrepreneurship</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="tb-brand">
+    <div class="tb-badge">School of Entrepreneurship</div>
+    <div class="tb-name">JP <span>Academy</span></div>
+  </div>
+  <div class="tb-right">
+    <div class="streak">&#128293; Day 1</div>
+    <div class="av">JP</div>
+  </div>
+</div>
+
+<div class="content">
+
+  <div class="card">
+    <div style="font-size:11px;color:var(--text3);font-family:'DM Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">Good day, founder</div>
+    <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.3;">JP School of <span style="color:var(--gold);">Entrepreneurship</span></div>
+    <div style="font-size:13px;color:var(--text2);margin-bottom:18px;line-height:1.6;">Professional courses built for entrepreneurs. Apply every lesson to your business the same day.</div>
+    <a class="btn-gold" href="courses.html">&#128218; Browse Courses</a>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card"><div class="stat-icon">&#128218;</div><div class="stat-label">Modules Done</div><div class="stat-val">0<span style="font-size:13px;color:var(--text3)">/24</span></div><div class="stat-sub">Start today</div></div>
+    <div class="stat-card"><div class="stat-icon">&#127942;</div><div class="stat-label">Enrolled</div><div class="stat-val">1</div><div class="stat-sub">FMCG Social Media</div></div>
+    <div class="stat-card"><div class="stat-icon">&#9889;</div><div class="stat-label">Assignments</div><div class="stat-val">0<span style="font-size:13px;color:var(--text3)">/24</span></div><div class="stat-sub">Submit via Claude</div></div>
+    <div class="stat-card"><div class="stat-icon">&#127919;</div><div class="stat-label">Quiz Avg</div><div class="stat-val">--</div><div class="stat-sub">Take first quiz</div></div>
+  </div>
+
+  <div class="countdown">
+    <div>
+      <div style="font-size:14px;font-weight:600;color:var(--text);">NOVI Launch</div>
+      <div style="font-size:12px;color:var(--text3);margin-top:2px;">August 15, 2026</div>
+    </div>
+    <div style="text-align:right">
+      <div class="cd-num" id="cd">79</div>
+      <div style="font-size:11px;color:var(--text3);">days left</div>
+    </div>
+  </div>
+
+  <div class="sec-title">Continue Learning <a href="curriculum.html">View all</a></div>
+
+  <a class="mod-row active-mod" href="m01.html">
+    <div class="mod-badge mb-cur">01</div>
+    <div class="mod-info"><div class="mod-title-t">How Marketing Actually Works</div><div class="mod-meta-t">FMCG Social Media · 60 min</div></div>
+    <span class="mod-status ms-cur">Now</span>
+  </a>
+  <a class="mod-row" href="m02.html">
+    <div class="mod-badge mb-open">02</div>
+    <div class="mod-info"><div class="mod-title-t">Understanding the D2C Model</div><div class="mod-meta-t">FMCG Social Media · 60 min</div></div>
+    <span class="mod-status ms-open">Next</span>
+  </a>
+  <a class="mod-row" href="m03.html">
+    <div class="mod-badge mb-open">03</div>
+    <div class="mod-info"><div class="mod-title-t">Consumer Behaviour -- Pet Owners</div><div class="mod-meta-t">FMCG Social Media · 60 min</div></div>
+    <span class="mod-status ms-open">Open</span>
+  </a>
+
+</div>
+
+<nav class="bnav">
+  <a class="bni active" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="bni-label">Home</span></a>
+  <a class="bni" href="courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span class="bni-label">Courses</span></a>
+  <a class="bni" href="grades.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span class="bni-label">Grades</span></a>
+  <a class="bni" href="profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span class="bni-label">Profile</span></a>
+</nav>
+
+<script>
+var d=Math.max(0,Math.ceil((new Date('2026-08-15')-new Date())/86400000));
+document.getElementById('cd').textContent=d;
+</script>
+</body>
+</html>

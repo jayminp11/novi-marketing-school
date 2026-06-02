@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Courses - JP Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.course-card{background:var(--card);border:1px solid var(--border);border-radius:var(--rl);padding:20px;margin-bottom:14px;position:relative;overflow:hidden;}
+.course-card::before{content:'';position:absolute;top:0;right:0;width:80px;height:80px;background:radial-gradient(circle,var(--gold-glow),transparent 70%);pointer-events:none;}
+.course-card.enrolled{border-color:rgba(201,168,76,0.3);}
+.cs-badge{position:absolute;top:14px;right:14px;background:var(--bg3);border:1px solid var(--border);border-radius:20px;font-size:10px;padding:3px 10px;color:var(--text3);font-family:'DM Mono',monospace;}
+.cs-emoji{font-size:30px;margin-bottom:10px;}
+.cs-tag{font-size:10px;font-family:'DM Mono',monospace;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:5px;}
+.cs-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.3;}
+.cs-desc{font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:12px;}
+.cs-meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:12px;}
+.cs-meta-item{font-size:12px;color:var(--text3);}
+.prog-bar{height:3px;background:var(--bg3);border-radius:2px;overflow:hidden;margin-bottom:6px;}
+.prog-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:2px;}
+.prog-label{font-size:11px;color:var(--text3);display:flex;justify-content:space-between;margin-bottom:12px;}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="tb-brand">
+    <div class="tb-badge">School of Entrepreneurship</div>
+    <div class="tb-name">JP <span>Academy</span></div>
+  </div>
+  <div class="tb-right"><div class="av">JP</div></div>
+</div>
+
+<div class="content">
+  <div style="font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--text);margin-bottom:16px;">All Courses</div>
+
+  <div class="course-card enrolled">
+    <div class="cs-emoji">&#128241;</div>
+    <div class="cs-tag">Enrolled - In Progress</div>
+    <div class="cs-name">FMCG Social Media Marketing</div>
+    <div class="cs-desc">Master social media marketing for FMCG and D2C brands. Instagram, Facebook, YouTube, LinkedIn, WhatsApp. Build NOVI's marketing engine while you learn.</div>
+    <div class="cs-meta">
+      <div class="cs-meta-item">&#128218; 24 modules</div>
+      <div class="cs-meta-item">&#9201; 6 months</div>
+      <div class="cs-meta-item">&#127942; Certificate</div>
+    </div>
+    <div class="prog-bar"><div class="prog-fill" style="width:4%"></div></div>
+    <div class="prog-label"><span>1 of 24 modules</span><span>4%</span></div>
+    <a class="btn-gold" href="m01.html">&#9654; Continue - Module 1</a>
+  </div>
+
+  <div class="course-card" style="opacity:0.6;">
+    <div class="cs-badge">Coming Soon</div>
+    <div class="cs-emoji">&#128176;</div>
+    <div class="cs-tag">Finance for Founders</div>
+    <div class="cs-name">Financial Management and M&A Basics</div>
+    <div class="cs-desc">Unit economics, P&L, valuations and M&A frameworks. Address your finance weakness directly.</div>
+    <div class="cs-meta"><div class="cs-meta-item">&#128218; 20 modules</div><div class="cs-meta-item">&#9201; 5 months</div></div>
+    <button class="btn-outline">Notify me when available</button>
+  </div>
+
+  <div class="course-card" style="opacity:0.6;">
+    <div class="cs-badge">Coming Soon</div>
+    <div class="cs-emoji">&#9878;</div>
+    <div class="cs-tag">Legal for Entrepreneurs</div>
+    <div class="cs-name">Business Law and Contract Mastery</div>
+    <div class="cs-desc">Leverage your LLB in business -- contracts, IP protection, investor agreements.</div>
+    <div class="cs-meta"><div class="cs-meta-item">&#128218; 16 modules</div><div class="cs-meta-item">&#9201; 4 months</div></div>
+    <button class="btn-outline">Notify me when available</button>
+  </div>
+
+  <div class="course-card" style="opacity:0.6;">
+    <div class="cs-badge">Coming Soon</div>
+    <div class="cs-emoji">&#127981;</div>
+    <div class="cs-tag">Operations</div>
+    <div class="cs-name">FMCG Operations and Supply Chain</div>
+    <div class="cs-desc">Manufacturing, contract management, distribution and logistics for consumer product brands in India.</div>
+    <div class="cs-meta"><div class="cs-meta-item">&#128218; 18 modules</div><div class="cs-meta-item">&#9201; 4 months</div></div>
+    <button class="btn-outline">Notify me when available</button>
+  </div>
+</div>
+
+<nav class="bnav">
+  <a class="bni" href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg><span class="bni-label">Home</span></a>
+  <a class="bni active" href="courses.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg><span class="bni-label">Courses</span></a>
+  <a class="bni" href="grades.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span class="bni-label">Grades</span></a>
+  <a class="bni" href="profile.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span class="bni-label">Profile</span></a>
+</nav>
+</body>
+</html>
